@@ -5,19 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dice Roller</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/style.css">
     </head>
 
     <body>
         <p id="output">
         </p>
-        <div>
-            <label for="name">Enter Number Of Dice:</label>
-            <input type="text" name="number-of-dice" id="number-of-dice">
-            <button id="Roll-button" type="button">Roll!</button></div>
-        <div><label for="name">Total:</label></div>
-        <div>
-            <button id="show-all-rolls" type="button">Show All Rolls</button></div>
+            <h2>Dice Roller</h2>
+            <input type="text" placeholder= " " id="roll-counter">
+            
+
+            <button id="Roll-button">Roll!</button>
+            <h3>Number of Rolls</h3>
+            <span id="Rolls">0</span>
+            <button id="show-all-rolls" type="button">Show All Rolls</button>
+            <h3>Total</h3>
+            <span id="Total">0</span>
 
         <ol>
             <li></li>
@@ -25,8 +28,8 @@
             <li></li>
             <li></li>
         </ol>
-        
-        <script src="main.js"></script>
+
+        <script src="./assets/scripts/main.js"></script>
     </body>
 
 </html>
