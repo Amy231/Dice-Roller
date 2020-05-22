@@ -32,7 +32,7 @@ rollButton.addEventListener('click', function () {
 
 ShowAllRollsButton.addEventListener('click', function () {
   var list = document.createElement("li");
-  for(let counter = 1; counter <= allrollselement; counter += 1){
+  for( i = 0; i <= allrollselement; i++){
   list.innerHTML = "List";                   
 document.body.appendChild(list);        
 }
