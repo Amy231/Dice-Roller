@@ -6,7 +6,7 @@ const DieRolls = [];
 const ShowAllRollsButton = document.querySelector("#show-all-rolls");
 const Totalelement = document.querySelector("#Total");
 const rollcounterelement = document.querySelector("#roll-counter")
-const allrollselement = document.querySelectorAll("#List")
+const allrollselement = document.getElementById("List");
 
 
 //Add a click event listener for your "Roll!" button. (1 point)
@@ -31,10 +31,10 @@ rollButton.addEventListener('click', function () {
 //Write a new loop: Loop over the dieRolls array, creating a new List Item for each number and adding that List Item to the innerHTML of the "All Rolls" element. This LI should show the value of the roll. (4 points)
 
 ShowAllRollsButton.addEventListener('click', function () {
-  var list = document.createElement("li");
-  for( i = 0; i <= allrollselement; i++){
-  list.innerHTML = "List";                   
-document.body.appendChild(list);        
+  for( i = 0; i < DieRolls.length; i++){
+  let newlistitem = document.createElement("li");
+  newlistitem.textContent = DieRolls[i]               
+  allrollselement.appendChild(newlistitem);
 }
 
 })
